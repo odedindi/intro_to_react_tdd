@@ -26,3 +26,7 @@ See the section about [prettier](https://prettier.io/docs/en/install.html) for m
 * test 2: button starts as disabled but as input is entered in the input field it should become active 
 
 ### second test suite:
+* test 1: display blank login form, with remember me checked by default
+* test 2: allow enter a username and a password
+* test 3: allow toggling remember
+* test 4: submit the form with username, password, and remember

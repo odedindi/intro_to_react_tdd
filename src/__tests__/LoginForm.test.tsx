@@ -45,7 +45,7 @@ describe("<LoginForm />", () => {
     });
   });
 
-  test("should allow toggling remember me", async () => {
+  test("allow toggling remember", async () => {
     const onRememberChange = jest.fn();
     const { findByTestId } = renderLoginForm({
       onRememberChange,
@@ -58,7 +58,7 @@ describe("<LoginForm />", () => {
     expect(onRememberChange).toHaveBeenCalledWith(false);
   });
 
-  test("should submit the form with username, password, and remember", async () => {
+  test("submit the form with username, password, and remember", async () => {
     const onSubmit = jest.fn();
     const { findByTestId } = renderLoginForm({
       onSubmit,
