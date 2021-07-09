@@ -3,7 +3,7 @@ import { fireEvent, render } from "@testing-library/react";
 import LoginForm, { LoginFormProps as Props } from "../components/LoginForm";
 
 describe("<LoginForm />", () => {
-  function renderLoginForm(props: Partial<Props> = {}) {
+  const renderLoginForm = (props: Partial<Props> = {}) => {
     const defaultProps: Props = {
       onInputChange() {
         return;
