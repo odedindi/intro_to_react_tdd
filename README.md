@@ -1,6 +1,19 @@
 # my start with tdd in react and ts
+## The app has 2 test suites
 
-In the project directory, you can run:
+### first test suite: 
+* test 1: renders hello tests
+* test 2: button starts as disabled but as input is entered in the input field it should become active 
+
+### second test suite:
+* test 1: display blank login form, with remember me checked by default
+* test 2: allow enter a username and a password
+* test 3: allow toggling remember
+* test 4: submit the form with username, password, and remember
+* 
+## The app has no CSS really
+
+## In the project directory, you can run:
 
 ### `yarn install`
 Installs all needed dependencies
@@ -14,19 +27,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ### `yarn prettier`
 
-format all files with Prettier
-
-See the [prettier](https://prettier.io/docs/en/install.html) documentation for more information.
-
-## The app has no CSS really
-## The app has 2 test suites
-
-### first test suite: 
-* test 1: renders hello tests
-* test 2: button starts as disabled but as input is entered in the input field it should become active 
-
-### second test suite:
-* test 1: display blank login form, with remember me checked by default
-* test 2: allow enter a username and a password
-* test 3: allow toggling remember
-* test 4: submit the form with username, password, and remember
+format all files with Prettier, see [prettier](https://prettier.io/docs/en/install.html) documentation for more information.
