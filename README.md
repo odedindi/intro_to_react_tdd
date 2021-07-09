@@ -1,10 +1,8 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
+# my start with tdd in react and ts
 
 In the project directory, you can run:
+
+### `yarn install`
 
 ### `yarn start`
 
