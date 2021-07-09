@@ -1,5 +1,5 @@
 import React from "react";
-
+import LoginForm from "./components/LoginForm";
 function App(): JSX.Element {
   const [isDisabled, setIsDisabled] = React.useState<boolean>(true);
   const [inputContent, setInputContent] = React.useState<string>("");
@@ -22,6 +22,8 @@ function App(): JSX.Element {
       <button data-testid="myBtn" disabled={isDisabled}>
         Click me
       </button>
+
+      <LoginForm />
     </div>
   );
 }
