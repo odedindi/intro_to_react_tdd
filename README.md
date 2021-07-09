@@ -16,10 +16,10 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 format all files with Prettier
 
-See the section about [prettier](https://prettier.io/docs/en/install.html) for more information.
+See the [prettier](https://prettier.io/docs/en/install.html) documentation for more information.
 
-* The app has no CSS really
-* The app has 2 test suites
+## The app has no CSS really
+## The app has 2 test suites
 
 ### first test suite: 
 * test 1: renders hello tests
