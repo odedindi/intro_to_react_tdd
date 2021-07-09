@@ -1,13 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import LoginForm from "./components/LoginForm";
 function App(): JSX.Element {
-  const [isDisabled, setIsDisabled] = React.useState<boolean>(true);
-  const [inputContent, setInputContent] = React.useState<string>("");
+  const [isDisabled, setIsDisabled] = useState<boolean>(true);
+  const [inputContent, setInputContent] = useState<string>("");
 
   React.useEffect(() => {
     inputContent.length ? setIsDisabled(false) : setIsDisabled(true);
   }, [inputContent]);
 
+  const [shouldRemember] = useState(true);
+  const onInputChange = (variable: { username: string; password: string }) => {
+    console.log(variable);
+  };
+  const onRememberChange = (remember: boolean) => {
+    console.log(remember);
+  };
+  const onSubmit = (username: string, password: string) => {
+    console.log(username, password);
+  };
   return (
     <div>
       <h1>Hello tests</h1>
@@ -23,7 +33,12 @@ function App(): JSX.Element {
         Click me
       </button>
 
-      <LoginForm />
+      <LoginForm
+        shouldRemember={shouldRemember}
+        onInputChange={onInputChange}
+        onRememberChange={onRememberChange}
+        onSubmit={onSubmit}
+      />
     </div>
   );
 }

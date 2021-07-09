@@ -10,7 +10,8 @@ test("renders hello tests", () => {
 
 test("button starts as disabled but as input is entered in the input field it should become active", () => {
   render(<App />);
-  const searchButton = screen.getByRole("button");
+  // const searchButton = screen.getByRole("button");
+  const searchButton = screen.getByTestId("myBtn");
   expect(searchButton).toBeDisabled();
   fireEvent.change(screen.getByTestId("myInput"), {
     target: { value: "some text" },
